@@ -1,0 +1,110 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+h2{
+    padding: 2rem;
+}
+p{
+    padding: auto;
+    font-size: 1.5rem;
+}
+
+body {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+     width: 200vh;
+    height: 100vh;
+     
+ 
+    background-color: #40C9A2; /* Optional background */
+}
+.container{
+
+    width: 100vmin;
+      
+     background-color: #2F9C95;
+     padding: 1rems ;
+     border-radius: 1rem;
+     min-height: 70vh;
+     width: 50vh;
+
+} 
+input{
+    padding: auto;
+
+    
+}
+
+form{
+    margin: 2rem 0 3rem 0; 
+}
+
+form button,select,input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+}
+
+form input{
+    border: 1px solid lightgrey;
+    font-size: 1rem;
+    height: 3rem;
+    padding-left: 0.5rem;
+    background-color: #A3F7B5;
+
+}
+form select{
+    padding: 0.25rem;
+    width: 80%;
+    cursor: pointer;
+     
+}
+form button{
+    height: 3rem;
+    background-color: #A3F7B5;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+
+.dropdown i {
+    font-size:1.25rem;
+}
+
+.select-container img{
+    max-width:  2rem;
+}
+ 
+.select-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    border-radius: 0.5rem;
+}
+
+.select-container select{
+    padding-left: 1min;
+    margin-left: 0.25rem;
+}
+
+.msg{
+    margin: 2rem 0 2rem 0;
+    padding-left: 2rem;
+}
+
+#reset{
+    background-color: #456990;
+     display: none;
+}
+
+ 

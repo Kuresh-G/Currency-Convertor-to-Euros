@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Currency Convertor</h2>
+        <form >
+            <div class="amount">
+            <p>Enter amount </p>
+            <input type="text" value=100>
+            </div>
+        <div class="dropdown">
+            <div class="from">
+                <p>From</p>
+                <div class="select-container">
+                    <img src="https://flagsapi.com/BE/flat/64.png" alt="">
+                    <select name="From" id="">
+                        <option value="INR"> INR</option>
+                        <option value="USD" > USD</option>
+                        <option value="EUR"> EUR</option>
+                        <option value="AUD"> AUD</option>
+                        <option value="NP" >NP</option>
+                        <option value="BE" selected>BE</option>
+                    </select>
+                </div >
+            </div>
+             <i class="fa-sharp fa-solid fa-right-left"></i>
+            <div class="to">
+            <p>To</p>
+            
+                <div class="select-container">
+                <img src="https://flagsapi.com/IN/flat/64.png" alt="">
+                <select name="To" id="">
+                    <option value="INR" selected> INR</option>
+                    <option value="USD"> USD</option>
+                    <option value="EUR"> EUR</option>
+                    <option value="AUD"> AUD</option>
+                </select>
+                </div >
+            </div>
+        </div>
+        <div class="msg">1BE=89.99 INR</div>
+        <button>Get Exchange Rate </button>
+        </form>
+    </div>
+    <script src="App.js"></script>
+</body>
+</html>
