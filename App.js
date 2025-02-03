@@ -65,7 +65,7 @@ select.addEventListener("change",(evt)=>{
      
     // console.log(fromCurr.value);
     // console.log(toCurr.value);
-    let response  = await fetch("https://latest.currency-api.pages.dev/v1/currencies/eur.min.json");
+    let response  = await fetch("https://latest.currency-api.pages.dev/v1/currencies/inr.min.json");
     let data = await response.json();
     let from = fromCurr.value;
     let to = toCurr.value;
@@ -79,7 +79,7 @@ select.addEventListener("change",(evt)=>{
                  reset.style.display="block";
              }
              
-             msg.innerHTML+=`${amount.value}  ${from} : ${(temp[code]*amount.value).toFixed(3)} euro <br>`;
+             msg.innerHTML+=`${amount.value}  ${from} : ${(temp[code]*amount.value).toFixed(3)} rs <br>`;
              count++;
             
         }
@@ -88,7 +88,7 @@ select.addEventListener("change",(evt)=>{
                 button.disabled=true;
                 reset.style.display="block";
              }
-            msg.innerHTML+=`${amount.value} ${to} : ${(temp[code]*amount.value).toFixed(3)} euro <br>`;
+            msg.innerHTML+=`${amount.value} ${to} : ${(temp[code]*amount.value).toFixed(3)} rs <br>`;
             count++;
        }
      }
