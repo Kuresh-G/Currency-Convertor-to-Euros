@@ -1,4 +1,4 @@
-const base_url = "https://latest.currency-api.pages.dev/v1/currencies/inr.min.json";
+const base_url = "https://latest.currency-api.pages.dev/v1/currencies/eur.min.json";
 const dropdown = document.querySelectorAll(".dropdown select");
 let img = document.querySelectorAll(".dropdown img");
 const button = document.querySelector(" form  button");
@@ -65,8 +65,7 @@ select.addEventListener("change",(evt)=>{
      
     // console.log(fromCurr.value);
     // console.log(toCurr.value);
-    
-    let response  = await fetch(base_url);
+    let response  = await fetch("https://latest.currency-api.pages.dev/v1/currencies/eur.min.json");
     let data = await response.json();
     let from = fromCurr.value;
     let to = toCurr.value;
