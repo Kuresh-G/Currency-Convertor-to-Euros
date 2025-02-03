@@ -65,7 +65,7 @@ select.addEventListener("change",(evt)=>{
      
     // console.log(fromCurr.value);
     // console.log(toCurr.value);
-    let response  = await fetch(base_url);
+    let response  = await fetch(`https://latest.currency-api.pages.dev/v1/currencies/${toCurr.value}.min.json"()`);
     let data = await response.json();
     let from = fromCurr.value;
     let to = toCurr.value;
